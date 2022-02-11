@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="main">
+    <div>
+        <div id="">
+            <h1>Tính điểm trung bình môn</h1>
+            <table class="table">
+                <tr>
+                    <th>Điểm thành phần 1</th>
+                    <th>Điểm thành phần 2</th>
+                    <th>Điểm thành phần 3</th>
+                    <th>Điểm thành phần 4</th>
+                    <th>Điểm thi</th>
+                    <th>Điểm tổng hệ 10</th>
+                    <th>Điểm tổng hệ 4</th>
+                    <th>Điểm tổng dạng chữ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- input -->
+                    <td>
+                        <input type="text" class="score" placeholder="Điểm" />
+                        <select class="percent">
+                            <option value="0" disabled selected>0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="score" placeholder="Điểm" />
+                        <select class="percent">
+                            <option value="0" disabled selected>0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="score" placeholder="Điểm" />
+                        <select class="percent">
+                            <option value="0" disabled selected>0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="score" placeholder="Điểm" />
+                        <select class="percent">
+                            <option value="0" >0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="score" placeholder="Điểm" />
+                    </td>
+                    <!-- calculate -->
+                    <td>
+                        <p id="total-score-10"></p>
+                    </td>
+                    <td>
+                        <p id="total-score-4"></p>
+                    </td>
+                    <td>
+                        <p id="total-score-text"></p>
+                    </td>
+                    <td>
+                        <button id="btn-score">Tính</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="line"></div>
+        <!-- // -->
+        <div id="">
+            <h1>Đổi điểm hệ 10 sang hệ 4</h1>
+            <p>( Làm tròn 1 chữ số sau dấu phẩy )</p>
+            <table class="table">
+                <tr>
+                    <th>Điểm hệ 10</th>
+                    <th>Điểm hệ 4</th>
+                    <th>Điểm dạng chữ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- input -->
+                    <td>
+                        <input type="text" id="score-10" placeholder="Điểm hệ 10" style="width: 30%;"/>
+                    </td>
+                    <!-- calculate -->
+                    <td>
+                        <p id="convert-score-4"></p>
+                    </td>
+                    <td>
+                        <p id="convert-score-text"></p>
+                    </td>
+                    <td>
+                        <button id="btn-convert">Chuyển đổi</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="line"></div>
+
+        <!-- // -->
+        <div id="">
+            <h1>Tính điểm trung bình học kì</h1>
+            <table class="table" id="list-table">
+                <tr>
+                    <th>Tên môn học</th>
+                    <th>Điểm hệ 4</th>
+                    <th>Số tín chỉ</th>
+                    <th>Điểm trung bình</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- input -->
+                    <td>
+                        <input type="text" id="subject" placeholder="Tên môn học" style="width: 80%;"/>
+                    </td>
+                    <td>
+                        <input type="text" id="input-score-4" placeholder="Điểm hệ 4" style="width: 30%;"/>
+                    </td>
+                    <td>
+                        <select id="so-tc">
+                            <option value="1">1 tín chỉ</option>
+                            <option value="2">2 tín chỉ</option>
+                            <option value="3">3 tín chỉ</option>
+                            <option value="4">4 tín chỉ</option>
+                        </select>
+                    </td>
+                    <!-- calculate -->
+                    <td>
+                        <p id="average-score-4"></p>
+                    </td>
+                    <td>
+                        <button id="btn-subject">Thêm</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="line"></div>
+
+    </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
